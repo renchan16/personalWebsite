@@ -1,0 +1,196 @@
+/* Global styles */
+*{
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body{
+    background: #ffffff; /* Fallback color */
+    font-family: Poppins, sans-serif;
+    align-items: center;
+    justify-content: center;
+    background-image: url(peak_background.png);
+}
+
+/* Header styles */
+header {
+    background-color: #0f0f0f;
+    color: #fff;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it's above other content */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Header container styles */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Left content styles */
+.left-content {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo styles */
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    margin-left: 40px;
+}
+
+/* Navigation styles */
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: left;
+    flex: 1;
+}
+
+/* Navigation link styles */
+.navigation a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+/* Navigation link hover styles */
+.navigation a:hover {
+    color: rgba(172,132,250,245); /* Change color to violet on hover */
+}
+
+/* Last item in navigation styles */
+.last-item {
+    margin-right: 60px;
+}
+
+/* Introduction section styles */
+.intro-section {
+    text-align: left;
+    padding: 50px;
+}
+
+/* Introduction image styles */
+.intro-image {
+    position: absolute;
+    top: 50px; /* Adjust this value to move the image up or down */
+    right: 100px; /* Adjust this value to move the image more towards the center */
+}
+
+/* Introduction image inner image styles */
+.intro-image img {
+    max-width: 500px; /* Set maximum width */
+    max-height: 500px; /* Set maximum height */
+}
+
+/* Introduction title styles */
+.intro-title {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+/* Introduction subtitle styles */
+.intro-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+}
+
+/* Static text styles */
+.static-text {
+    color: white;
+}
+
+/* Dynamic text styles */
+.dynamic-text {
+    position: relative;
+    color: rgba(172,132,250,245);
+}
+
+/* Dynamic text cursor styles */
+.dynamic-text::after {
+    content: '|';
+    position: absolute;
+    animation: cursor 1s infinite;
+}
+
+/* Additional information styles */
+.additional-info {
+    color: rgb(218, 214, 214);
+    margin-right: 650px;
+}
+
+/* Button container styles */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+/* View projects button styles */
+.view-projects-btn {
+    background-color: #0f0f0f;
+    color: rgba(172,132,250,245);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    animation: glow 2s infinite alternate;
+    text-decoration: none;
+}
+
+/* Icon buttons container styles */
+.icon-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+/* Smaller button styles */
+.smaller-button {
+    color: white;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+/* Last smaller button styles */
+.smaller-button:last-child {
+    margin-right: 1;
+}
+
+/* Smaller button inner image styles */
+.smaller-button img {
+    display: block;
+    width: 25px;
+    height: auto;
+}
+
+/* Glow animation */
+@keyframes glow {
+    from {
+        box-shadow: 0 0 6px rgba(172,132,250,245);
+    }
+    to {
+        box-shadow: 0 0 12px rgba(172,132,250,245);
+    }
+}

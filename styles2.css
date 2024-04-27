@@ -1,0 +1,210 @@
+/* Global styles */
+*{
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body{
+    background-image: url(peak_background.png);
+    font-family: Poppins, sans-serif;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Header styles */
+header {
+    background-color: #0f0f0f;
+    color: #fff;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Header container styles */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Left content styles */
+.left-content {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo styles */
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    margin-left: 40px;
+}
+
+/* Navigation styles */
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: left;
+    flex: 1;
+}
+
+/* Navigation link styles */
+.navigation a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+/* Navigation link hover styles */
+.navigation a:hover {
+    color: rgba(172,132,250,245);
+}
+
+/* Last item in navigation styles */
+.last-item {
+    margin-right: 60px;
+}
+
+/* About section styles */
+.about-section {
+    text-align: left;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Photo grid styles */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(20px, 330px));
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-top: 110px;
+    float: left;
+    width: 50%;
+}
+
+/* Grid photo styles */
+.grid-photo {
+    width: 360px;
+    height: auto;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Grid photo hover styles */
+.grid-photo:hover {
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+/* About title styles */
+.about-title {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+/* About text styles */
+.about-text{
+    display: flex;
+    flex-direction: column;
+	flex-wrap: nowrap;
+    width: 50%;
+}
+
+/* About info styles */
+.about-info {
+    color: rgb(218, 214, 214);
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+    flex: 1;
+    max-width: 600px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+/* About title heading styles */
+.about-titlehead{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 48px;
+}
+
+/* Timeline styles */
+.timeline {
+    width: 80%;
+    margin: 50px auto;
+    position: relative;
+}
+
+/* Timeline item styles */
+.timeline-item {
+    width: 100%;
+    margin: 20px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Timeline content styles */
+.timeline-item .content {
+    position: relative;
+    padding: 20px;
+    background-color: #0f0f0f;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    flex: 1;
+}
+
+/* Timeline date styles */
+.timeline-item .date {
+    font-weight: bold;
+    color: rgba(172,132,250,245);
+}
+
+/* Timeline item heading styles */
+.timeline-item h2 {
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+/* Timeline item paragraph styles */
+.timeline-item p {
+    color: gray;
+}
+
+/* Timeline item image styles */
+.timeline-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-right: 20px;
+    box-shadow: 0px 5px 15px ;
+}
+
+/* Timeline item hover styles */
+.timeline-item:hover .content {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(172,132,250,245);
+}
+
+/* Alternate timeline item content background */
+.timeline-item:nth-child(even) .content {
+    background-color: #0f0f0f;
+}
